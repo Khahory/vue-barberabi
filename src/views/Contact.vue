@@ -6,7 +6,11 @@
 
 <script>
     export default {
-        name: "Contact"
+        name: "Contact",
+        beforeCreate: () => {
+            document.body.className = '';
+            document.documentElement.className = '';
+        }
     }
 </script>
 

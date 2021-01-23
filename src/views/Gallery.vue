@@ -6,10 +6,10 @@
 
 <script>
     export default {
-        name: "Gallery"
+        name: "Gallery",
+        beforeCreate: () => {
+            document.body.className = '';
+            document.documentElement.className = '';
+        }
     }
 </script>
-
-<style scoped>
-
-</style>
