@@ -18,6 +18,20 @@ const routes = [
     }
   },
   {
+    path: '/gallery',
+    name: 'About',
+    component: function () {
+      return import(/* webpackChunkName: "about" */ '../views/Gallery.vue')
+    }
+  },
+  {
+    path: '/contact',
+    name: 'About',
+    component: function () {
+      return import(/* webpackChunkName: "about" */ '../views/Contact.vue')
+    }
+  },
+  {
     path: '/mio',
     name: 'Mio',
     component: function () {
